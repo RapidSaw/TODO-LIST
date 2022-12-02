@@ -11,7 +11,7 @@
 * {
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
 }
 
 body {
@@ -32,10 +32,34 @@ h1 {
     font-size: 36px;
     color: white;
     text-align: center;
-    margin: 50px 0;
+    margin: 50px 0 20px 0;
+}
+
+.date_wrapper {
+    display: flex;
+}
+
+#day {
+    font-family: Montserrat;
+    margin: auto 0 2px 5px;
+    color: white;
+}
+
+#date {
+    font-family: Montserrat;
+    margin: auto 5px 2px auto;
+    color: white;
+}
+
+#watch {
+    font-family: Michroma;
+    font-size: 28px;
+    color: white;
+    /* text-align: center; */
 }
 
 .input_wrapper {
+    display: flex;
     margin: 0 auto;
 }
 
@@ -45,6 +69,114 @@ h1 {
     font-size: 18px;
     width: 100%;
     height: 40px;
+}
+
+#input_field::placeholder {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    color: red;
+}
+
+#add-button {
+    font-family: Montserrat;
+    width: 20%;
+    color: white;
+    background-color: rgba(39, 39, 39, 0.5);
+}
+
+#add-button:hover, #all:hover, #to-do:hover {
+    background-color: rgb(104, 104, 104, 0.1);
+}
+
+.filter_wrapper {
+    margin-top: 5px;
+}
+
+#all{
+    font-family: Montserrat;
+    height: 30px;
+    padding: 0 5px;
+    color: white;
+    background-color: rgb(50, 39, 39, 0.5);
+}
+
+#to-do {
+    font-family: Montserrat;
+    height: 30px;
+    padding: 0 5px;
+    color: white;
+    background-color: rgb(39, 39, 39, 0.5);
+}
+
+#start-message {
+    color: white;
+    margin-top: 10px;
+    font-family: Michroma;
+    text-align: center;
+}
+
+.task {
+    display: flex;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 2px;
+    margin-top: 10px;
+    background-color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    width: 100%;
+    height: 40px;
+    transition: 0.3s;
+}
+
+/* .active {
+    opacity: 1;
+    transition: 0.5s;
+} */
+
+.task p {
+    margin: auto 0;
+    padding-left: 5px;
+}
+
+.task .change_button {
+    width: 25px;
+    height: 25px;
+    background-image: url(img/edit_icon.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    margin: auto 5px auto auto;
+}
+
+.task .del_button {
+    width: 25px;
+    height: 25px;
+    background-image: url(img/delete_icon.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    margin: auto 5px auto 0;
+}
+
+.del_button:hover , .change_button:hover {
+    background-color: lightgray;
+    border-radius: 4px;
+    width: 27px;
+    height: 27px;
+    background-size: 27px 27px;
+}
+
+.done {
+    padding-left: 20px;
+    background-color: hsl(0, 0%, 75%);
+    color: white;
+    height: 27px;
+    background-image: url(img/check_icon.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
 }
 
 /* background-image: linear-gradient(red, white) */

@@ -10,13 +10,24 @@
 <body>
     <div class="wrapper">
         <h1>TODO LIST</h1>
-        <div class="input_wrapper"><input id="input_field" type="text"></div>
-        <ul class="list">
-        </ul>
+        <div class="date_wrapper">
+            <div id="watch"></div>
+            <div id="day"></div>
+            <div id="date"></div>
+        </div>
+        <div class="input_wrapper">
+            <input id="input_field" type="text" maxlength="40">
+            <button id="add-button">Add task</button>
+        </div>
+        <div class="filter_wrapper">
+            <button id="all">All</button>
+            <button id="to-do">To Do</button>
+        </div>
+        <div class="list">
+            <p id="start-message">Click "Add task" to create tasklist</p>
+        </div>
     </div>
-
-
-
+    <script src="js/watch.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
